@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Educational Assistance -Vision Foundation</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+  <style>
+    nav ul a {
+      color: #000;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="nav-extended">
+    <div class="nav-wrapper white ">
+      <a href="index.html" class="brand-logo"><img src="images/logo.png" height="50px;" style="padding:5px;" /></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="about-us.html">About Vision Foundation</a></li>
+        <li ><a class="dropdown-trigger " href="#" data-target="dropdown1">What we do<i
+              class="material-icons right icon-black ">arrow_drop_down</i></a></li>
+        <li class="active"><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#modal1" class=" modal-trigger">Login </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Website Home</a></li>
+    <li><a href="about-us.html">About Vision Foundation</a></li>
+    <li><a href="educational-assistance.html"> Educational Assistance</a></li>
+    <li ><a href="people-welfare.html">People Welfare</a></li>
+    <li class="active"><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+    <li><a href="#">Log In </a></li>
+  </ul>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="educational-assistance.html">Educational Assistance</a></li>
+    <li><a href="people-welfare.html"> People Welfare</a></li>
+  </ul>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 center">
+              <h4>Login</h4>
+            </div>
+            <div class="input-field col s12 ">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Username</label>
+            </div>
+            <div class="input-field col s12  ">
+              <i class="material-icons prefix">security</i>
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+              <br>
+            </div>
+            <div class="input-field col s12 center">
+              <i class="material-icons prefix">security</i>
+              <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h1>Gallery</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g1.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g2.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g3.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g4.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g5.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g6.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g7.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g8.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g9.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g10.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g11.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g12.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g13.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g14.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g15.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g16.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g17.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g18.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g19.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g20.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g21.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g22.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/gallery/g23.jpg" class="materialboxed" width="400px" height="300px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer blue darken-4 z-depth-1  ">
+    <div class="container center">
+      <div class="row  ">
+        <div class="col l4 m4 s12">
+          <h5 class="white-text">About the Vision Foundation</h5>
+          <p class="grey-text text-lighten-4">Vision Foundation as a charitable trust seeks to make education accessible
+            for every student who dreams to come up in life with a bright career. We do our best for the students to
+            pursue his/her education without any societal pressures.</p>
+        </div>
+        <div class="col l4  m4 s12 ">
+          <img class="responsive-img" src="images/logo-large.png" width="50%" style="padding-top:20px;" /><br>
+
+        </div>
+        <div class="col l4 s12  m4 left-align">
+          <h6><u>Quick Links</u></h6>
+          <ul>
+            <li><a href="index.html" class="white-text">Home</a></li>
+            <li><a href="about-us.html" class="white-text">About Us</a></li>
+            <li><a href="educational-assistance.html" class="white-text">What we do - Educational Assistance</a></li>
+            <li><a href="people-welfare.html" class="white-text">What we do - People Welfare</a></li>
+            <li><a href="gallery" class="white-text">Gallery</a></li>
+            <li><a href="contact-us.html" class="white-text">Contact Us</a></li>
+          </ul>
+          <a href="https://www.youtube.com/channel/UClsXzBN9cvAz5xQR5AJNnzw"><img src="images/youtube.png"
+              width="64px"></a>
+          <a href="https://www.instagram.com/visionfoundation.chn/"><img src="images/instagram.png" width="64px"></a>
+          <a href="https://www.facebook.com/visionfoundation.chn"><img src="images/facebook.png" width="64px"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 Copyright Protected Vision Foundation
+        <a class="grey-text text-lighten-4 right" href="https://github.com/dwivediabhimanyu">Website by Abhimanyu
+          Dwivedi</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.scrollspy').scrollSpy();
+      $('.modal').modal();
+      $(".dropdown-trigger").dropdown();
+      $('.materialboxed').materialbox();
+      $('.slider').slider({
+        duration: 200
+      });
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+
+    });
+  </script>
+
+</body>
