@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vision Foundation</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.sorg/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23fafafa' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    nav ul a {
+      color: #000;
+    }
+
+    section {
+
+      width: 100%;
+      padding-top: 3em;
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+
+    #head {
+      height: 700px;
+
+      background-color: darkgrey;
+      background: url('images/education.jpg');
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media screen and (max-width: 850px) {
+      #head {
+        height: 500px;
+      }
+
+      #head1 {
+        height: 700px;
+        ;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      #head {
+        height: 300px;
+      }
+
+      #head1 {
+        height: 700px;
+      }
+    }
+
+
+
+    [data-scroll] {
+      transition: all 2s;
+    }
+
+    [data-scroll="in"] {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    [data-scroll="out"] {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+
+    .first {
+      background-color: #fefefe;
+      color: #000;
+
+    }
+      .second h5 {
+        color:#fff;
+    }
+
+    .highlight {
+      background: url(https://andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png);
+      background-repeat: no-repeat;
+      background-size: 100% 95%;
+      padding: 8px 0;
+    }
+    #mycard {
+      padding: 20px;
+      color:#ffffff;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <nav class="nav-extended">
+    <div class="nav-wrapper white ">
+      <a href="#" class="brand-logo"><img src="images/logo.png" height="50px;" style="padding:5px;" /></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="about.html">About Vision Foundation</a></li>
+        <li><a class="dropdown-trigger" href="#" data-target="dropdown1">What we do<i
+              class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#modal1" class=" modal-trigger">Login </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="about.html">About Vision Foundation</a></li>
+    <li><a href="what-we-do.html">What we do</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Log In </a></li>
+  </ul>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Educational Assistance</a></li>
+    <li><a href="#!">People Welfare</a></li>
+  </ul>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 center">
+              <h4>Login</h4>
+            </div>
+            <div class="input-field col s12 ">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Username</label>
+            </div>
+            <div class="input-field col s12  ">
+              <i class="material-icons prefix">security</i>
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field col s12 center">
+              <i class="material-icons prefix">security</i>
+              <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div id="head1">
+    <div class="header z-depth-2" id="head">
+      <div class="row valign-wrapper">
+        <div class="col s12 m6 l6 offset-m6 offset-l6 center" id="upper-content" style="padding-top:130px;"">
+  <img src=" images/logo-large.png" class="reponsive-img" width="250px" />
+        <h2>Vision Foundation</h2>
+        <h5>To sow the seeds of knowledge through generosity</h5><br>
+        <a class="waves-effect waves-light btn-large green darken-4">Donate Now </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <section class="first">
+    <div class="row  ">
+      <div class="col s1 m12 l12 center ">
+        <h2 class="highlight ">Our Mission</h2>
+      </div>
+      <div class="col s12 m6 l6 ">
+        <p style="font-size:medium;"> Vision Foundation as a charitable trust seeks to make education accessible for
+          every student who dreams to come up
+          in life with a bright career. We do our best for the students to pursue his/her education without any societal
+          pressures.</p><br>
+        <img src="images/blockquote.png" width="50px" />
+        <br>
+        <p style="color:#0d47a1;padding-left:40px;font-weight: 700;font-size:large;">To make quality education acessible
+          for every deprived and deserving student. The ulterior
+          goal
+          is that by education, everyone can attain a good standard of living through which they in turn can serve
+          humanity.
+        </p>
+      </div>
+      <div class="col s12 m6 l6 center ">
+        <img src="images/g1.png" alt="" class="responsive-img z-depth-2"><br>
+        <i>In August 2008, Vision Foundation's first student Abinaya receiving support. </i>
+      </div>
+      <div class="col s12 m6 lm6 center" style="padding-top:50px;">
+        <a class="waves-effect waves-light btn-large z-depth-2 yellow darken-4">Know more</a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+        <div class="col s1 m12 l12 center ">
+            <h2 class="highlight ">Our Causes</h2>
+          </div>
+          <div class="row" style="margin-bottom:0px;">
+<div class="col s12 m12 l6" style="background-color: rgb(6, 173, 219);" id="mycard">
+  <div class="col s12 m12 l6 ">
+      <img src="images/CA1.jpg" width="250px" class="z-depth-2" />
+  </div>
+  <div class="col s12 m12 l6">
+      <h5>EDUCATIONAL ASSISTANCE</h5>
+      <p>After a complete background check of their family conditions and performance we assist the educational needs
+        for students in schools and colleges.</p>
+  </div>
+</div>
+<div class="col s12 m12 l6" style="background-color: rgba(221, 39, 39, 0.714);"  id="mycard">
+    <div class="col s12 m12 l6 ">
+        <img src="images/CA03.jpg" width="250px" class="z-depth-2" />
+    </div>
+    <div class="col s12 m12 l6">
+        <h5>CAREER GUIDANCE</h5>
+        <p>After a complete background check of their family conditions and performance we assist the educational needs
+          for students in schools and colleges.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col s12 m12 l6" style="background-color: rgb(38, 115, 91);"  id="mycard">
+      <div class="col s12 m12 l6 ">
+          <img src="images/CA005.jpg" width="250px" class="z-depth-2" />
+      </div>
+      <div class="col s12 m12 l6">
+          <h5>DISASTER RELIEF FUNDS</h5>
+          <p>After a complete background check of their family conditions and performance we assist the educational needs
+            for students in schools and colleges.</p>
+      </div>
+    </div>
+    <div class="col s12 m12 l6 " style="background-color: rgb(249, 153, 49);"  id="mycard">
+        <div class="col s12 m12 l6 ">
+            <img src="images/CA04.jpg" width="250px" class="z-depth-2" />
+        </div>
+        <div class="col s12 m12 l6">
+            <h5>PEOPLE WELFARE</h5>
+            <p>After a complete background check of their family conditions and performance we assist the educational needs
+              for students in schools and colleges.</p></div>
+        </div>
+      </div>
+    </div>
+    
+  
+    
+<section>
+    <div class="row" >
+      <div class="col s12 m3 l3 white center z-depth-1" style="margin-top:50px;">
+        <h4 class="heading" >News and Events</h4>
+        <div class="collection">
+          <a href="#!" class="collection-item black-text">Volunteers Registration <span class="new badge blue darken-4"></span></a>
+          <a href="#!" class="collection-item black-text">Annual Vision Meet on June 2018 - Coming Up</a>
+          <a href="#!" class="collection-item black-text">New Item</a>
+          <a href="#!" class="collection-item black-text">New Item</a>
+          <a href="#!" class="collection-item black-text">New Item</a>
+          <a href="#!" class="collection-item black-text">New Item</a>
+          <a href="#!" class="collection-item black-text">New Item</a>
+          <a href="#!" class="collection-item black-text">New Item</a>
+        </div>
+      </div>
+      <div class="col s12 m8 l8 offset-l1 offset-m1 white">
+          <div class="col s1 m12 l12 center ">
+              <h2 class="highlight ">Student Stories</h2>
+            </div>
+          <div class="row center white darken-4 black-text" style="padding-top:10px;">
+            <div class="col s12 m4 l4">
+              <img src="images/student1.jpg" class="circle" width="150px">
+            </div>
+            <div class="col s12 m7 l7">
+              <p>
+                " Vision Foundatoin has financially supported me to finish my college and build my career. I am really greatful and
+                thankful to Vision Foundation for helping me. Vision Foundation is helping many students to pursue their studies
+                and dreams. "
+              </p>
+              <h6>- ABINAYA</h6>
+            </div>
+          </div>
+          <div class="row center white darken-4 black-text" style="padding-top:10px ;">
+            <div class="col s12 m4 l4">
+              <img src="images/student2.jpg" class="circle" width="150px">
+            </div>
+            <div class="col s12 m7 l7">
+              <p>
+                "When i have nothing other than my mark, my teacher helped me to know about Vision Foundation in which people who
+                are starving to study would get an opportunity with full support of money, care and love. I am proud being part of
+                this family, now with that support i have finished my Engineering and got a job and now I am going to help with
+                our family. "
+              </p>
+              <h6>- ASHOK</h6>
+            </div>
+          </div>
+
+    </div>
+
+  </section>
+
+
+  <footer class="page-footer blue darken-4 z-depth-1  ">
+    <div class="container center">
+      <div class="row  ">
+        <div class="col l4 m4 s12">
+          <h5 class="white-text">About the Vision Foundation</h5>
+          <p class="grey-text text-lighten-4">Vision Foundation as a charitable trust seeks to make education accessible
+            for every student who dreams to come up in life with a bright career. We do our best for the students to
+            pursue his/her education without any societal pressures.</p>
+        </div>
+        <div class="col l4  m4 s12 ">
+          <img class="responsive-img" src="images/logo-large.png" width="50%" style="padding-top:20px;"/><br>
+
+        </div>
+        <div class="col l4 s12  m4 left-align">
+            <h6><u>Quick Links</u></h6>
+            <ul>
+              <li><a href="index.html" class="white-text">Home</a></li>
+              <li><a href="about-us.html" class="white-text">About Us</a></li>
+              <li><a href="educational-assistance.html" class="white-text">What we do - Educational Assistance</a></li>
+              <li><a href="people-welfare.html" class="white-text">What we do - People Welfare</a></li>
+              <li><a href="gallery" class="white-text">Gallery</a></li>
+              <li><a href="contact-us.html" class="white-text">Contact Us</a></li>
+            </ul>
+            <a href="https://www.youtube.com/channel/UClsXzBN9cvAz5xQR5AJNnzw" ><img src="images/youtube.png" width="64px"></a>
+            <a href="https://www.instagram.com/visionfoundation.chn/"><img src="images/instagram.png" width="64px" ></a>
+            <a href="https://www.facebook.com/visionfoundation.chn" ><img src="images/facebook.png" width="64px"></a>
+          </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 Copyright Protected Vision Foundation
+        <a class="grey-text text-lighten-4 right" href="https://github.com/dwivediabhimanyu">Website by Abhimanyu Dwivedi</a>
+      </div>
+    </div>
+  </footer>
+  
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.scrollspy').scrollSpy();
+      $(".dropdown-trigger").dropdown();
+      $('.modal').modal();
+      $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  $('.fixed-action-btn').floatingActionButton();
+    });
+  </script>
+
+  <script>
+    ScrollOut({
+      threshold: 0.5
+    });
+  </script>
+</body>
+
+</html>
