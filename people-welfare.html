@@ -24,9 +24,9 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="about-us.html">About Vision Foundation</a></li>
-            <li class="active"><a class="dropdown-trigger" href="#" data-target="dropdown1">What we do<i
-                  class="material-icons right icon-black">arrow_drop_down</i></a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a class="dropdown-trigger " href="#" data-target="dropdown1">What we do<i
+                  class="material-icons right icon-black ">arrow_drop_down</i></a></li>
+            <li ><a href="gallery.html">Gallery</a></li>
             <li><a href="#">Contact us</a></li>
             <li><a href="#modal1" class=" modal-trigger">Login </a></li>
           </ul>
@@ -34,10 +34,10 @@
       </nav>
       
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Website Home</a></li>
+          <li><a href="index.html">Website Home</a></li>
         <li><a href="about-us.html">About Vision Foundation</a></li>
-        <li class="active"><a href="educational-assistance.html"> Educational Assistance</a></li>
-        <li><a href="people-welfare.html">People Welfare</a></li>
+        <li><a href="educational-assistance.html"> Educational Assistance</a></li>
+        <li class="active"><a href="people-welfare.html">People Welfare</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact-us.html">Contact us</a></li>
         <li><a href="#">Log In </a></li>
@@ -79,42 +79,26 @@
       
       </div>
       <section>
-    <img src="images/educational-assistance.jpg" width="100%">
+    <img src="images/people-welfare.jpg" width="100%">
 </section>
 <div class="container">
     <div class="row">
         <div class="col s12 m12 l12">
-            <h1>Educational Assistance</h1>
-            <p>
-                Educational Assistance are given to students after a complete background check of their family conditions and
-                performance. We assist the educational needs for students in schools and colleges.</p>
+            <h1>People Welfare</h1>
         </div>
         <div class="col s12 m12 l10 offset-l1" style="padding-top:60px;">
                 <div class="slider">
                     <ul class="slides">
                         <li>
-                            <img src="images/EA4.jpg">
+                            <img src="images/PW1.jpg">
                         </li>
                         <li>
-                            <img src="images/EA1.jpg">
+                            <img src="images/PW2.jpg">
                         </li>
                         <li>
-                            <img src="images/EA2.jpg">
+                            <img src="images/PW3.jpg">
                         </li>
-                        <li>
-                            <img src="images/EA3.jpg">
-                        </li>
-                        <li>
-                            <img src="images/EA5.jpg">
-                        </li>
-                        <li>
-                            <img src="images/EA6.jpg">
-                        </li>
-                        <li>
-                            <img src="images/EA7.jpg">
-                        </li>
-                        <li>
-                            <img src="images/EA8.jpg">
+
                         </li>
                     </ul>
                 </div>
@@ -122,6 +106,7 @@
     </div>
     <div class="row">
         <div class="col s12 m12 l12">
+            <blockquote><h5> " The best way to find yourself is to lose yourself in the service of others"</h5></blockquote>
           <p> The students who are given
             financial support are continuously monitored for their improvements in exams and necessary advise are given by
             Founder of the trust whenever its necessary. The students are also asked to keep in touch with the foundation
@@ -131,24 +116,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col s12 m12 l12"><h2>Other Assistance</h2></div>
-        <div class="col s12 m12 l6 center">
-          <h5>Aid to school children</h5>
-          <img src="images/EA6 - min.jpg" class="z-depth-2">
-          <p>
-            Basic necessities like bags, notebooks, etc., are provided by us to schools seeking aid.
-          </p>
+        <div class="col s12 m12 l12"><h2>Aid to Orphange</h2>
+        <p>Some basic necessities like food, clothes, books, etc., are provided to orphanages and old-age homes. Festivals and donor family functions are also celebrated with them. Rs 2,21,000 has been spent till date.</p>
         </div>
-        <div class="col s12 m12 l6 center">
-          <h5>Career Guidance</h5>
-          <img src="images/CA03 - min.jpg" class="z-depth-2">
-          <p>
-            In the current scenario of immense competition and dull job opportunities, we provide career development programs and help our students find jobs suitable for their qualification.
-          </p>
-        </div>
-        <div class="col s12 m12 l8 offset-l2">
-          <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-        </div>
+        <div class="col s12 m12 l12"><h2>Disaster Relifef</h2>
+          <p>At times of adversities like any natural disasters, families are left stranded without food, shelter, etc., Vision Foundation mobilizes aid for them at the times of need. The total amount spent till date is Rs 2,52,750.</p>
+          </div>
+        
 
     </div>
 </div>
@@ -199,40 +173,12 @@
           $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.scrollspy').scrollSpy();
+            $('.modal').modal();
             $(".dropdown-trigger").dropdown();
             $('.slider').slider({
                 duration : 200
             });
           });
         </script>
-<script>
-  window.onload = function () {
-  
-  //Better to construct options first and then pass it as a parameter
-  var options = {
-    title: {
-      text: "Students of Vision Foundation"              
-    },
-    data: [              
-    {
-      type: "column",
-      dataPoints: [ 
-        { label: "2009",  y: 6 },
-        { label: "2010", y: 23  },
-        { label: "2011", y: 49  },
-        { label: "2012",  y: 68  },
-        { label: "2013",  y: 85  },
-              { label: "2014", y: 116 },
-        { label: "2015", y: 132 },
-        { label: "2016",  y: 159  },
-        { label: "2017",  y: 196 },
-              { label: "2018 Till Jan",  y: 198  }
-      ]
-    }
-    ]
-  };
-  
-  $("#chartContainer").CanvasJSChart(options);
-  }
-  </script>
+
         </body>
