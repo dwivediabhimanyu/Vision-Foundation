@@ -18,7 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto');
 
@@ -36,7 +37,6 @@
     section {
 
       width: 100%;
-      padding: 1em;
     }
 
     #head {
@@ -110,99 +110,112 @@
       padding: 20px;
       color: #ffffff;
     }
-    .red {
-  color: 	#8B0000;
-}
-.page-title:after {
-    content: "";
-    background: #ececec;
-    display: block;
-    height: 1px;
-    margin: 0 auto 25px;
-    position: relative;
-    width: 40%;
-    margin-bottom: 75px;
-}
-.title-wrapper:after {
-  content: "";
-    display: block;
-    height: 5px;
-    margin: 20px auto -3px;
-    position: relative;
-    width: 20%;
-    z-index: 1;
-    background: #f7505a;
-}
 
+    .red {
+      color: #8B0000;
+    }
+
+    .page-title:after {
+      content: "";
+      background: #ececec;
+      display: block;
+      height: 1px;
+      margin: 0 auto 25px;
+      position: relative;
+      width: 40%;
+      margin-bottom: 75px;
+    }
+
+    .title-wrapper:after {
+      content: "";
+      display: block;
+      height: 5px;
+      margin: 20px auto -3px;
+      position: relative;
+      width: 20%;
+      z-index: 1;
+      background: #f7505a;
+    }
+    #scroll-board::-webkit-scrollbar
+{
+	width: 8px;
+	background-color:#fff;
+}
+#scroll-board::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #e0e0e0;
+}
   </style>
 
 
 </head>
 
 <body>
-    <nav class="nav-extended">
-        <div class="nav-wrapper white  ">
-          <a href="index.html" class="brand-logo"><img src="images/logo.png" height="50px;" style="padding:5px;" /></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="about-us.html">About Vision Foundation</a></li>
-            <li><a class="dropdown-trigger" href="#" data-target="dropdown1">What we do<i
-                  class="material-icons right icon-black">arrow_drop_down</i></a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact-us.html">Contact us</a></li>
-            <li><a href="#modal1" class=" modal-trigger">Login </a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li class="active"><a href="index.html">Website Home</a></li>
+  <nav class="nav-extended">
+    <div class="nav-wrapper white  ">
+      <a href="index.html" class="brand-logo"><img src="images/logo.png" height="50px;" style="padding:5px;" /></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="about-us.html">About Vision Foundation</a></li>
-        <li><a href="educational-assistance.html"> Educational Assistance</a></li>
-        <li><a href="people-welfare.html">People Welfare</a></li>
+        <li><a class="dropdown-trigger" href="#" data-target="dropdown1">What we do<i
+              class="material-icons right icon-black">arrow_drop_down</i></a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact-us.html">Contact us</a></li>
-        <li><a href="#">Log In </a></li>
+        <li><a href="#modal1" class=" modal-trigger">Login </a></li>
       </ul>
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="educational-assistance.html">Educational Assistance</a></li>
-        <li><a href="people-welfare.html"> People Welfare</a></li>
-      </ul>
-      <!-- Modal Structure -->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12 center">
-                  <h4>Login</h4>
-                </div>
-                <div class="input-field col s12 ">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type="text" class="validate">
-                  <label for="icon_prefix">Username</label>
-                </div>
-                <div class="input-field col s12  ">
-                  <i class="material-icons prefix">security</i>
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-                  <br>
-                </div>
-                <div class="input-field col s12 center">
-                  <i class="material-icons prefix">security</i>
-                  <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-    
-      </div>
-    
+    </div>
+  </nav>
 
-    <div id="head1" >
+  <ul class="sidenav" id="mobile-demo">
+    <li class="active"><a href="index.html">Website Home</a></li>
+    <li><a href="about-us.html">About Vision Foundation</a></li>
+    <li><a href="educational-assistance.html"> Educational Assistance</a></li>
+    <li><a href="people-welfare.html">People Welfare</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+    <li><a href="#">Log In </a></li>
+  </ul>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="educational-assistance.html">Educational Assistance</a></li>
+    <li><a href="people-welfare.html"> People Welfare</a></li>
+  </ul>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 center">
+              <h4>Login</h4>
+            </div>
+            <div class="input-field col s12 ">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Username</label>
+            </div>
+            <div class="input-field col s12  ">
+              <i class="material-icons prefix">security</i>
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+              <br>
+            </div>
+            <div class="input-field col s12 center">
+              <i class="material-icons prefix">security</i>
+              <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="head1">
     <div class="header z-depth-2" id="head">
       <div class="row valign-wrapper ">
         <div class="col s12 m6 l6 offset-m6 offset-l6 center" id="upper-content" style="padding-top:130px;"">
@@ -214,174 +227,141 @@
     </div>
   </div>
   </div>
-
   <section class="first">
-      <section id="feature" class="feature pad-80">
-        <div class="row center page-title">
-          <span class="title-wrapper"><h3>What we can do for you!</h3></span>  
+    <section id="feature" class="feature pad-80">
+      <div class="row center page-title">
+        <span class="title-wrapper">
+          <h3>What we can do for you!</h3>
+        </span>
 
-        </div>
-            <div class="row">
-              <div class="col s12 m3 l3">
-                <div class="feature-wrap">
-                    <div class="icon-wrap" style="color:rgb(6, 173, 219);" ;"><i class="fa fa-4x fa-child" ></i></div>
-                    <h4>People Welfare</h4>
-                    <p>We mobilizes aid whenever adversities like natural disasters affect the life of common people and they are left deprived of even basic necessities.</p>
-                </div>
-              </div> <!--/.col-->
-              <div class="col s12 m3 l3">
-                <div class="feature-wrap">
-                  <div class="icon-wrap" style="color:rgba(221, 39, 39, 0.714); "><i class="fa fa-4x fa-globe"></i></div>
-                  <h4>Education</h4>
-                  <p>After a complete background check of their family conditions and performance we assist the educational needs for students in schools and colleges.</p>
-                </div>
-              </div> <!--/.col-->
-              <div class="col s12 m3 l3">
-                <div class="feature-wrap">
-                  <div class="icon-wrap" style="color: rgb(38, 115, 91); "><i class="fa fa-4x fa-user"></i></div>
-                  <h4>Volunteering</h4>
-                  <p>In the current scenario of immense competition and dull job opportunities, we provide career development programs and help our students find jobs suitable for their qualification.</p>
-                </div>
-              </div> <!--/.col-->
-              <div class="col s12 m3 l3">
-                <div class="feature-wrap">
-                  <div class="icon-wrap" style="color: rgb(249, 153, 49);"><i class="fa fa-4x fa-umbrella"></i></div>
-                  <h4>Support</h4>
-                  <p>We also set aside funds to help old-age homes, orphanages and specially gifted childrens home on special occasions on yearly basis.</p>
-                </div>
-              </div> <!--/.col-->
-            </div> <!--/.row-->
-        </section>
-    
-    <div class="row ">
-        <div class="row center page-title">
-            <span class="title-wrapper"><h3>Our Mission</h3></span>  
-  
+      </div>
+      <div class="row center">
+        <div class="col s12 m3 l3">
+          <div class="feature-wrap">
+            <div class="icon-wrap" style="color:rgb(6, 173, 219);" ;"><i class="fa fa-4x fa-child"></i></div>
+            <h4>People Welfare</h4>
+            <p>We mobilizes aid whenever adversities like natural disasters affect the life of common people and they
+              are left deprived of even basic necessities.</p>
           </div>
-      <div class="col s12 m6 l6 ">
-        <p style="font-size:medium;"> Vision Foundation as a charitable trust seeks to make education accessible for
-          every student who dreams to come up
-          in life with a bright career. We do our best for the students to pursue his/her education without any societal
-          pressures.</p><br>
-        <img src="images/blockquote.png" width="50px" />
-        <br>
-        <p style="color:#0d47a1;padding-left:40px;font-weight: 700;font-size:large;" data-aos="fade-down"
-          data-aos-easing="linear" data-aos-duration="900">To make quality education acessible
+        </div>
+        <!--/.col-->
+        <div class="col s12 m3 l3">
+          <div class="feature-wrap">
+            <div class="icon-wrap" style="color:rgba(221, 39, 39, 0.714); "><i class="fa fa-4x fa-globe"></i></div>
+            <h4>Education</h4>
+            <p>After a complete background check of their family conditions and performance we assist the educational
+              needs for students in schools and colleges.</p>
+          </div>
+        </div>
+        <!--/.col-->
+        <div class="col s12 m3 l3">
+          <div class="feature-wrap">
+            <div class="icon-wrap" style="color: rgb(38, 115, 91); "><i class="fa fa-4x fa-user"></i></div>
+            <h4>Volunteering</h4>
+            <p>In the current scenario of immense competition and dull job opportunities, we provide career development
+              programs and help our students find jobs suitable for their qualification.</p>
+          </div>
+        </div>
+        <!--/.col-->
+        <div class="col s12 m3 l3">
+          <div class="feature-wrap">
+            <div class="icon-wrap" style="color: rgb(249, 153, 49);"><i class="fa fa-4x fa-umbrella"></i></div>
+            <h4>Support</h4>
+            <p>We also set aside funds to help old-age homes, orphanages and specially gifted childrens home on special
+              occasions on yearly basis.</p>
+          </div>
+        </div>
+        <!--/.col-->
+      </div>
+      <!--/.row-->
+    </section>
+    <div class="row center page-title">
+      <span class="title-wrapper">
+        <h3>Our Mission</h3>
+      </span>
+    </div>
+    <div class="row left" style="background: url('images/mission-bg.jpg'); color:white; padding:50px;">
+      <div class="col s12 ">
+        <p class="flow-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+            <i class="fas fa-1x fa-quote-left"></i><br><br>
+          To make quality education acessible
           for every deprived and deserving student. The ulterior
           goal
           is that by education, everyone can attain a good standard of living through which they in turn can serve
           humanity.
         </p>
+    
       </div>
-      <div class="col s12 m6 l6 center ">
-        <img src="images/g1.png" alt="" class="responsive-img z-depth-2"><br>
-        <i>In August 2008, Vision Foundation's first student Abinaya receiving support. </i>
-      </div>
-      <div class="col s12 m6 lm6 center" style="padding-top:50px;">
-        <a class="waves-effect waves-light btn-large z-depth-2 red darken-4">Know more</a>
+      <div class="col12 center" style="padding-top:300px">
+        <a class="waves-effect waves-light btn-large red darken-2 white-text " href="about-us.html">Know more</a>
       </div>
     </div>
-
+    
     </div>
-  </section>
-
-  <div class="col s12 m12 l12 center ">
-    <h2>Our Causes</h2>
-  </div>
-  <div class="row center" style="margin-bottom:0px;">
-    <div class="col s12 m12 l6" style="background-color: rgb(6, 173, 219);" id="mycard" data-aos="fade-right"
-      data-aos-easing="linear" data-aos-duration="800">
-      <div class="col s12 m12 l6 ">
-        <img src="images/CA1.jpg" width="250px" class="z-depth-2" />
-      </div>
-      <div class="col s12 m12 l6">
-        <h5>EDUCATIONAL ASSISTANCE</h5>
-        <p>After a complete background check of their family conditions and performance we assist the educational needs
-          for students in schools and colleges.</p>
-      </div>
-    </div>
-    <div class="col s12 m12 l6" style="background-color: rgba(221, 39, 39, 0.714);" id="mycard" data-aos="fade-right"
-      data-aos-easing="linear" data-aos-duration="800">
-      <div class="col s12 m12 l6 ">
-        <img src="images/CA03.jpg" width="250px" class="z-depth-2" />
-      </div>
-      <div class="col s12 m12 l6">
-        <h5>CAREER GUIDANCE</h5>
-        <p>After a complete background check of their family conditions and performance we assist the educational needs
-          for students in schools and colleges.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row center">
-    <div class="col s12 m12 l6" style="background-color: rgb(38, 115, 91);" id="mycard" data-aos="fade-right"
-      data-aos-easing="linear" data-aos-duration="800">
-      <div class="col s12 m12 l6 ">
-        <img src="images/CA005.jpg" width="250px" class="z-depth-2" />
-      </div>
-      <div class="col s12 m12 l6">
-        <h5>DISASTER RELIEF FUNDS</h5>
-        <p>After a complete background check of their family conditions and performance we assist the educational needs
-          for students in schools and colleges.</p>
-      </div>
-    </div>
-    <div class="col s12 m12 l6 " style="background-color: rgb(249, 153, 49);" id="mycard" data-aos="fade-right"
-      data-aos-easing="linear" data-aos-duration="800">
-      <div class="col s12 m12 l6 ">
-        <img src="images/CA04.jpg" width="250px" class="z-depth-2" />
-      </div>
-      <div class="col s12 m12 l6">
-        <h5>PEOPLE WELFARE</h5>
-        <p>After a complete background check of their family conditions and performance we assist the educational needs
-          for students in schools and colleges.</p>
-      </div>
-    </div>
-  </div>
-  </div>
-
-
-
-  <section>
-    <div class="row">
-      <div class="col s12 m3 l3 white center z-depth-1" style="margin-top:50px;">
-        <h4 class="heading">News and Events</h4>
-        <div class="collection">
-          <a href="#!" class="collection-item black-text">Volunteers Registration <span
-              class="new badge blue darken-4"></span></a>
-          <a href="#!" class="collection-item black-text">Annual Vision Meet on June 2018 - Coming Up</a>
-          <a href="#!" class="collection-item black-text">New Item</a>
-          <a href="#!" class="collection-item black-text">New Item</a>
-          <a href="#!" class="collection-item black-text">New Item</a>
-          <a href="#!" class="collection-item black-text">New Item</a>
-          <a href="#!" class="collection-item black-text">New Item</a>
-          <a href="#!" class="collection-item black-text">New Item</a>
-        </div>
-      </div>
-      <div class="col s12 m8 l8 offset-l1 offset-m1 white">
-        <div class="col s1 m12 l12 center ">
-          <h2 class="highlight ">Student Stories</h2>
-        </div>
-        <div class="row center white darken-4 black-text" style="padding-top:10px;">
-          <div class="col s12 m4 l4">
-            <img src="images/student1.jpg" class="circle" width="150px">
-          </div>
-          <div class="col s12 m7 l7">
-            <p>
-              " Vision Foundatoin has financially supported me to finish my college and build my career. I am really
-              greatful and
-              thankful to Vision Foundation for helping me. Vision Foundation is helping many students to pursue their
-              studies
-              and dreams. "
-            </p>
-            <h6>- ABINAYA</h6>
+    </section>
+    <section>
+        <div class="row">
+          <div class="col s12">
+              <div class="row center page-title">
+                  <span class="title-wrapper">
+                    <h3>How can you help us ?</h3>
+                  </span>
+                </div>
+                <div class="col s12 m3 l3 offset-l1 offset-m1 ">
+                    <img src="images/logo.png" alt="" class="responsive-img">
+                    <p class="black-text text-lighten-4">Vision Foundation as a charitable trust seeks to make education accessible
+                        for every student who dreams to come up in life with a bright career. We do our best for the students to
+                        pursue his/her education without any societal pressures.</p>
+                        
+                  </div>
+                  <div class="col s12 m6 l6 offset-l1 offset-m1 center">
+                      <p> 
+                          You can lend your contribution by giving your valuable time for our welfare initiatives. We welcome volunteers to
+                          join hands with us to take part in social activites.
+                        </p>
+                        <p > 
+                            You can also help us in serving better by donating to our charity organisation. Donations from you can help a child to get education, or
+                            a mother to feed her baby in a herculean environment.
+                          </p><br><br>
+                          <a class="waves-effect  waves-light btn-large green darken-1">Donate Now </a><br><br><br>
+                          <div class="col s12 right">
+                            <i>*Donations can be claimed for Income Tax Deduction for Donation under Section 80</i><br>
+                            <i>**Online recipts will be send to your email id provided.</i>
+                          </div>
+                  </div>
+      
           </div>
         </div>
-        <div class="row center white darken-4 black-text" style="padding-top:10px ;">
-          <div class="col s12 m4 l4">
-            <img src="images/student2.jpg" class="circle" width="150px">
-          </div>
-          <div class="col s12 m7 l7">
-            <p>
+      </section>
+<section>
+<div class="row">
+  <div class="col s12 m12 l8">
+      <div class="row center page-title">
+          <span class="title-wrapper">
+            <h3>Student Stories</h3>
+          </span>
+        </div>
+        <div class="row">
+    <div class="col s12 m4 l4 center">
+        <img src="images/student1.jpg" class="circle" width="150px">
+    </div>
+    <div class="col s12 m8 l8 right">
+      <p>
+        " Vision Foundatoin has financially supported me to finish my college and build my career. I am really
+        greatful and
+        thankful to Vision Foundation for helping me. Vision Foundation is helping many students to pursue their
+        studies
+        and dreams. "
+      </p>
+      <h6>- ABINAYA</h6>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col s12 m4 l4 center">
+          <img src="images/student2.jpg" class="circle" width="150px">
+      </div>
+      <div class="col s12 m8 l8 right">
+          <p>
               "When i have nothing other than my mark, my teacher helped me to know about Vision Foundation in which
               people who
               are starving to study would get an opportunity with full support of money, care and love. I am proud being
@@ -391,47 +371,47 @@
               our family. "
             </p>
             <h6>- ASHOK</h6>
-          </div>
-        </div>
-
-      </div>
-
-  </section>
-
-
-  <footer class="page-footer blue darken-4 z-depth-1  ">
-    <div class="container center">
-      <div class="row  ">
-        <div class="col l4 m4 s12">
-          <h5 class="white-text">About the Vision Foundation</h5>
-          <p class="grey-text text-lighten-4">Vision Foundation as a charitable trust seeks to make education accessible
-            for every student who dreams to come up in life with a bright career. We do our best for the students to
-            pursue his/her education without any societal pressures.</p>
-        </div>
-        <div class="col l4  m4 s12 ">
-          <img class="responsive-img" src="images/logo-large.png" width="50%" style="padding-top:20px;" /><br>
-
-        </div>
-        <div class="col l4 s12  m4 left-align">
-          <h6><u>Quick Links</u></h6>
-          <ul>
-            <li><a href="index.html" class="white-text">Home</a></li>
-            <li><a href="about-us.html" class="white-text">About Us</a></li>
-            <li><a href="educational-assistance.html" class="white-text">What we do - Educational Assistance</a></li>
-            <li><a href="people-welfare.html" class="white-text">What we do - People Welfare</a></li>
-            <li><a href="gallery" class="white-text">Gallery</a></li>
-            <li><a href="contact-us.html" class="white-text">Contact Us</a></li>
-          </ul>
-          <a href="https://www.youtube.com/channel/UClsXzBN9cvAz5xQR5AJNnzw"><img src="images/youtube.png"
-              width="64px"></a>
-          <a href="https://www.instagram.com/visionfoundation.chn/"><img src="images/instagram.png" width="64px"></a>
-          <a href="https://www.facebook.com/visionfoundation.chn"><img src="images/facebook.png" width="64px"></a>
-        </div>
       </div>
     </div>
+  </div>
+  <div class="col s12 m12 l3">
+<div class="row">
+    <div class="white center" style="margin-top:50px;">
+        
+      <h4 class="heading"><i class="fas  fa-calendar-alt" style="margin-top:25px;"></i> News and Events</h4>
+      <div class="collection" id="scroll-board" style="height:400px;overflow-y: scroll; overflow-x:hidden;">
+                
+          <a href="#!" class="collection-item black-text">Volunteers Registration <span
+            class="new badge blue darken-4"></span></a>
+        <a href="#!" class="collection-item black-text">Annual Vision Meet on June 2019 - Coming Up</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+        <a href="#!" class="collection-item black-text">New Item</a>
+      
+
+    </div>
+</div>
+  </div>
+</div>
+</section>
+
+  <footer class="page-footer  grey darken-3">
     <div class="footer-copyright">
       <div class="container">
-        © 2019 Copyright Protected Vision Foundation
+
+          
+        <h5>Follow us on <h5>
+        <a href="https://www.youtube.com/channel/UClsXzBN9cvAz5xQR5AJNnzw"><img src="images/youtube.png"
+          width="32px"></a>
+      <a href="https://www.instagram.com/visionfoundation.chn/"><img src="images/instagram.png" width="32px"></a>
+      <a href="https://www.facebook.com/visionfoundation.chn"><img src="images/facebook.png" width="32px"></a>
+      <br>       © 2019 Copyright Protected Vision Foundation 
         <a class="grey-text text-lighten-4 right" href="https://github.com/dwivediabhimanyu">Website by Abhimanyu
           Dwivedi</a>
       </div>
